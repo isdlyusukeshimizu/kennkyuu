@@ -1,0 +1,38 @@
+{
+  "name": "tmp_ai_call_backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "NODE_ENV=development ts-node-dev --respawn --transpile-only src/app.ts",
+    "start": "NODE_ENV=production node dist/app.js",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.13.1",
+    "@types/ws": "^8.5.14",
+    "@typescript-eslint/eslint-plugin": "^8.24.0",
+    "@typescript-eslint/parser": "^8.24.0",
+    "eslint": "^9.20.1",
+    "prettier": "^3.5.0",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "@fastify/env": "^5.0.2",
+    "@fastify/formbody": "^8.0.0",
+    "@fastify/websocket": "^11.0.2",
+    "dotenv": "^16.4.5",
+    "fastify": "^5.2.1",
+    "pino": "^9.6.0",
+    "pino-pretty": "^13.0.0",
+    "twilio": "^5.4.4",
+    "ws": "^8.18.0"
+  }
+}
