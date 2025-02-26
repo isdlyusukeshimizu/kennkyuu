@@ -1,0 +1,7 @@
+{{ main_instructions }}
+{% for instruction, titles in data_instructions.items() %}{{ instruction }} ({{ titles | join(', ') }}){% endfor %}
+
+「参考情報」：{% for doc in docs %}
+情報{{ loop.index }}: {{ doc.Title }}
+{{ doc.Content }}
+{% endfor %}
