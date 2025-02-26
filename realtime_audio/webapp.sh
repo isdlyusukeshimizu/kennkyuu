@@ -1,0 +1,1 @@
+uvicorn rta_gpt_web:app --reload --port 5050
